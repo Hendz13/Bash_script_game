@@ -1,0 +1,554 @@
+#!/bin/bash
+continu (){
+echo "Tell us your name :"
+read na
+echo "Welcome back , $na
+We have saved your choices last time you were here :
+"
+cat $na
+game
+}
+end ()
+{
+clear 
+#echo ${choices[@]}
+echo "You and zoe are walking back to the store she works at ,but you realise something
+you realize that zoe is fading , just like Mr. david , she is fading . and it hits you that , zoe was also a ghost from the start , you have been suspecting it for a while now .
+Zoe : 'So , you figured it out , right $name ?, i was a ghost from the start and i wasn't bound to one place or store , since my need was to explore the unnatural . 
+Thank you very much for spending this time with me , i know i am a handful at times but i really enjoyed . Thank you , $name '
+you nod your head and you realise that you are actually sad that you are parting with zoe , as annoying as she was , she actually made you have unpredictable fun . something that you have always 
+been wondering about , you thank zoe for spending this time with you as well , and you tell her that it makes sense that the world is her playground , since she is a very fun outgoing person ! "
+sleep 5
+echo "                                                                                           YOU WON !
+Congratulations , you did it , you went through both ghost stories unharmed .
+Thank you for playing the game ! "
+}
+general (){
+
+echo "
+                                                                                              |CHOOSE WISELY|
+ "
+echo "Zoe : 'OK, Well now to the hard part , we have two shops to explore , and since you are new here , I'll let you choose the door we go through' 
+a- door 1 : The Bakery
+b- door 2 : The Butcher's"
+read i
+echo "$i" >> $name
+#choices=$i
+if [ $i == 'a' ] 
+then
+bakery
+echo "                                                                                            |Level 2|
+
+Zoe : 'Well that was a hell of a ride , i really enjoyed doing that with you , $name'
+
+
+Congratulations for passing this past level ..
+Get ready for some more wholesome spookiness coming your way !! 
+"
+butcher
+end
+elif [ $i == "b" ] 
+then
+butcher
+echo "                                                                                            |Level 2|
+
+Zoe : 'Well that was a hell of a ride , i really enjoyed doing that with you , $name'
+
+
+Congratulations for passing this past level ..
+Get ready for some more wholesome spookiness coming your way !! 
+"
+bakery
+end
+fi
+}
+
+butcher(){
+clear
+echo "                                                                                       |MEETING A GHOST|
+
+
+
+Zoe : 'Well , Butcher's it is ! '
+You Go on with Zoe , since you already agreed to be here , you can't really take back your word , i don't even think she would let you take them back , You are actually stuck with her .
+Not that you hate it though , you could use some of the unpredictable fun . And being with Zoe is the peek of unpredictability . Zoe : 'Well , this butcher's seems very unwelcoming ..'
+You hadn't expected to see Zoe be a little afraid or even be capable of showing that emotion since she was such a 'charge in' person . Zoe : 'This seems like it's going to be SO MUCH FUN ' .And she
+is back , you thought . You are both now standing in front of this butcher's door and Zoe just lunges in as she always does pulling on your arm to make sure you go inside as well . As soon as you
+both step inside your heart sinks in your feet . there is a Woman with a really big bloody knife in front of you , she has really big eyes and she has bad eye bags , the woman acknowledges your
+entrance and she is now running towards both of you with her bloody knife in her hand . You both scream out of fear and u try to reach for the door but the lady stands between you and the door ,
+and when she opens her mouth to speak , there is something unexpected that happens ."
+sleep 6
+echo "
+Lady : 'Oh my lord I'm sorry i frightened you darlings , i certainly didn't mean to . i just got a little excited , i never have any visitors ' , she said in a shaky voice almost as if she had been
+crying , 'Let me just try to put the knife away , I am Linda 'she continued as she put her hand with the bloody knife in it behind her back .
+Zoe : 'OH , THANK GOD , i thought i was going to be killed by you for a minute . Not that i would mind being killed by a pretty woman like yourself , Ms. Linda' 
+Linda : 'Oh my ! , Do you really think i look pretty? ' 
+Zoe : 'Absolutely , ma'am . You look astounding , don't you think so as well , $name?'
+a- 'No i don't see it , she is really pale and those eye bags are harsh'
+b- 'Not with those eye bags no LOL'
+c- 'She is absolutely stunning and i am sure she would look even better with a smile'"
+read f
+echo "$f" >> $name
+#choices=$f
+if [ $f == 'a' ] 
+then 
+echo "Linda starts to cry about her looks that u just insulted , her tears forming up and filling the place .
+it filled up in no time and you died drowning 
+
+Time To Start over "
+butcher
+elif [ $f == "b" ] 
+then
+echo "Linda's face turns red because of how angry that comment made her .
+Linda : 'You sound just like those fake friends i had when i was alive ' , she says as she swings her bloody knife at you
+You got decapitated ! 
+
+Time to Start over "
+butcher
+elif [ $f == "c" ] 
+then
+echo "Linda's facial expressions change into extreme happiness so happy that she might even cry , 'Oh Lord , you both are just extra sweet i might eat you ' , she says in a shaky teary voice .
+Linda : 'I'm sorry ,I just have never been complimented by someone .. in fact i never even had a real friend , i was just called masculine because of my job , i worked as a butcher . it was not 
+really my choice it was a family business i just had to grow into it , but i gained muscle since i was carrying heavy wight meat all day and smashing knives into wood to train my arm to cut 
+precisely . That's why all the girls and boys were scared of me and made fun of me ,since i was an easy target for them , it was so easy for me to cry , to be frank it still is easy until this day 
+here, I never even had been invited to a sleepover or a party .. ' , she then stays in silent for a moment and then her eyes got even more teary 
+Linda : 'I am so sorry i have always been a blabber mouth , Oh My! you both must be so bored with me ' she continues as her voice gets shakier and shakier "
+sleep 6
+echo "
+Zoe : 'That's not possible , How could they not invite someone as pretty , kind and honest as you are , Linda i assure you it is completely their fault .'
+Linda's face goes back to smiling softly and she is now calmer and quieter , 'Well it's not like i can go back in time and fix my childhood memories or friends and stand up for myself.' she says 
+And in that moment you felt Zoe's eyes poking a hole in you as she is staring intensely at you and you know exactly what she wants to say , it is one of those moments where she has an idea that she 
+must share and she thinks is very brilliant 
+Zoe : 'I HAVE A GREAT IDEA !! , how about we make your own and first sleepover , Linda ?'
+Linda : 'Oh how sweet you are , you would go through all the trouble to help an old ghost like me ?'
+Zoe : 'It's more of a fun activity for the three friends in this room , Linda , me and $name here , we can go get and come back here to be doing our fun sleepover , and gossip
+all night long , what do you think , $name? '
+
+a- 'Of course , We can even rent a movie '
+b- 'Uhm .. I don't think i want to spend my night doing a sleepover with an old lady and a stranger i just met in a random supermarket'
+c- 'Zoe .. let's just head back i don't want to be here'
+d- Save and exit game"
+read c 
+echo "$c" >> $name
+#choices=$c
+if [ $c == "a" ]
+then
+echo "
+Zoe : 'I knew you had some good in you , $name and the movie idea is just the cherry on top .'
+Linda : 'Just before we all get ahead of ourselves , I have to say one thing '
+Zoe : 'Of course Linda anything !!'
+Linda : 'Well You see , i am a ghost after all and i have been haunting this place since it is my father's butcher's and o have tried to get out of it , but unfortunately to no avail , and i have 
+also tried to get rid of this bloody knife in my hand , but i just can't neither leave not get rid of the knife . i guess it's just the way i am reincarnated .'
+Zoe : 'Oh , that's too bad we could have had fun all three of us , but no worries you can handle the interior decorations in this place while me and $name can go get the goods '
+Linda : 'Oh that's brilliant , Zoe . we have ourselves a deal then ! , see you later friends ' Linda says as she waves to us while we go out "
+
+sleep 6
+clear
+echo "                                                                                      |HELPING A GHOST|
+
+well you and Zoe are now split to buy the stuff we need for the sleepover , she is getting the snacks and you are assigned to get the movie , At first it just seems like an easy task you will just go
+Pick out a movie and just head back , on the way to the movies store , you only think about how this sleepover may go , maybe it will actually be fun , is this a sign from the universe for you to 
+just have fun and not overthink everything , since you are just the exact opposite from Zoe , before you go on overthinking , You find yourself in front of the movie store .
+You go in and you freeze in front of how many options you can choose from , and now it hit you , You don't know Linda's taste nor Zoe's . and you find yourself torn between 3 options : either to get 
+an old movie that Linda might know of , or you could go with a safe option that is a modern comedy movie , or you could just get your favorite movie and call it a day .
+What do you want to do ?
+
+a- 'I shouldn't care about their opinions , my favorite movie will make this night a little more tolerable'
+b- 'I think i should get something that we all might like , this modern comedy movie is it '
+c- 'We are doing this for Linda's sake so i should just get the old movie'
+d- Save and exit game
+"
+read u
+echo "$u" >> $name
+#choices=$u
+if [ $u == "a" ]
+then 
+echo "You go on with your favorite movie , and you have a doubt for a second but you just decide to go with it , you go back to Linda's butchery and as soon as you go in , you see she has cleaned the whole place , it's like she turned it upside down and it looks amazing , as soon as she sees you she approaches you all excited 
+Linda : 'Oh Hey $name ! , I am so excited for the movie , which one did you get ? '
+you get a little sweaty and you say the name of the movie you chose , and she just confirms your doubts , she doesn't know anything about this movie and she just starts crying .
+her tears filling up the place , it just kept going until it flooded and you couldn't breathe anymore . 
+You Died Drowning ! 
+Start over !"
+butcher
+elif [ $u == "b" ] 
+then
+echo "You go on with the modern funny movie , and you have a doubt for a second but you just decide to go with it , you go back to Linda's butchery and as soon as you go in , you see she has cleaned the whole place , it's like she turned it upside down and it looks amazing , as soon as she sees you she approaches you all excited 
+Linda : 'Oh Hey $name ! , I am so excited for the movie , which one did you get ? '
+you get a little sweaty and you say the name of the movie you chose , and she just confirms your doubts , she doesn't know anything about this movie .
+Linda : 'YOU GOT A MOVIE THAT ONLY YOU TWO CAN ENJOY , ARE YOU MOCKING ME JUST LIKE MY FAKE FRIENDS ??'
+she yells at you while plunging at you with her bloody knife ,
+You Were Decapitated ! 
+Start over !"
+butcher
+elif [ $u == "d" ]
+then
+echo "Your progress have been saved , come back soon !"
+exit 0; 
+elif [ $u == "c" ] 
+then
+echo "You go on with the old movie ,  and you have a doubt for a second but you just decide to go with it , you go back to Linda's butchery and as soon as you go in , you see she has cleaned the whole place , it's like she turned it upside down and it looks amazing , as soon as she sees you she approaches you all excited , it fills your heart with warmth that she did all of that !
+Linda : 'Oh Hey $name ! , I am so excited for the movie , which one did you get ? '
+you tell her the name of the movie and she gets even more excited , 'Oh that movie was so popular back in my day , it must have been a really old movie for you two , thank you for choosing something that i would enjoy as well ' she says in a sweet voice that makes you wonder why these friends of hers were so mean to her .
+as you were both talking , Zoe chimes in 
+Zoe : 'DON'T START THE FUN WITHOUT ME ! ' she shouts out of breath like she had been running or carrying something heavy 
+she comes in and she has a large bag of snacks in her hand and when she raises her head , she sees how the place has been redecorated by Linda and she stands in owe 
+Zoe : 'You did so well , Linda . this place looks amazing '
+you agree with Zoe and Linda blushes , you three carry on to start the fun of the sleepover ."
+sleep 6
+clear
+echo "                                                                                      |THE SLEEPOVER|
+                                                                                      
+The three of you sit down and play the movie on the little TV Linda had in her father's shop , eating the snacks Zoe got , and enjoying the fireplace that warms both your feet and your hearts .
+you spend a great night with your new friends and by the end of the night , Linda turns to you too 
+Linda 'Thank you both so much for tonight i think i am ready to let go of the past and just move on to the higher life i have in front of me , thank you both again i will make sure to tell my dad how sweet you both were to me ! '
+Zoe : 'It was such great honor to know you and to spend the night with you , ms . Linda '
+You agree with Zoe and Linda is looking at you for your last words for her .
+What is it that you want to say to Linda ?
+
+a- 'You were such a great friend ! '
+b- 'Good Bye sweet Linda ! , i will always remember you'
+c- 'Thank you for the best sleepover !' 
+"
+read z
+echo "$z" >> $name
+#choice=$z
+
+fi 
+elif [ $c == "b" ] 
+then
+echo "Linda's face turns red because of how angry that comment made her .
+Linda : 'You sound just like those fake friends i had when i was alive ' , she says as she swings her bloody knife at you"
+sleep 1
+echo "
+You got decapitated ! 
+"
+sleep 0.5 
+echo "
+Time to Start over "
+butcher
+elif [ $c == "c" ] 
+then
+echo "Linda starts to cry That you are just like her old fake friends , her tears forming up and filling the place .
+it filled up in no time "
+sleep 0.5 
+echo "you died drowning 
+"
+sleep 0.5
+echo "
+Time To Start over "
+butcher
+elif [ $c == "d" ] 
+then
+echo "Your choices have been saved , come back soon ! "
+exit 0;
+fi 
+fi
+}
+
+bakery(){
+clear
+echo "
+Zoe : 'OK! , $name , the bakery looks the scariest of them both.
+let's go on our ADVENTURE! '
+
+
+You both go to the front door of the bakery and since it is already opened Zoe let's herself in , leading the way of-course since you were too afraid to do it.
+Zoe takes a few steps in but you are a little skeptical of the whole situation .
+Zoe : 'come on , $name it's going to be okay you have the great and brave ZOE by your side .' Zoe says trying to encourage you
+you then go in the bakery , and as soon as you go through the door , the door shuts making you startle and get a little more anxious than you were .
+you try to pull on Zoe to talk her out of it , but Zoe's eyes are wide open at something that u did not notice due to how focused you were on the door situation.
+In front of you both there stands a really tall man , not quite a man since he was actually kind of transparent , and on his face were not the features of someone who is waiting for uninvited guests."
+sleep 6
+clear
+echo "
+                                                                                        |MEETING A GHOST|
+                                                                                        
+The transparent man suddenly roars really loud , making you shift your gaze to the door and get back to it trying to slam it open .
+Zoe : '$name !! , what are you doing , we decided to have an adventure' , Zoe screams to let you know she isn't backing down .
+the transparent man's face gets even more angry looking , he opens his mouth to speak .
+Man : 'WHAT ARE YOU TWO FOOLS DOING IN MY BAKERY??' , the man shouts at you two .
+a- 'We are just lost .Zoe , let's go back' , you say sneakingly before trying to open the door.
+b- 'Oh my god That's a tall man ! ' you exclaim observing the man
+c- save and exit game"
+read f
+echo "$f" >> $name
+#choices=$f
+if [ $f == 'b' ]
+then 
+echo "Zoe : 'Don't worry $name I'm excellent with anger issues .' said Zoe to you then she shifted her gaze to the transparent man , 'Hi, sir . We are very sorry to walk in like this , But we never saw
+anyone in this area before , nor have we seen this bakery working . we were just curious to see what was inside here.'
+
+The man surprisingly changes his facial expression , maybe Zoe didn't do a bad job . his face turned from angry to sad . he then goes on to tell you about this bakery and himself
+Man : 'My name is David . and i have been fond of baking all my life . for the entirety of my life all i remember is trying to bake and learning how to do certain recipes just for the sake of baking
+i worked in this bakery for most of my youth before i found my love and we made our own bakery. That was of course before our bakery got burned down with my wife inside . '"
+sleep 6
+
+echo "
+
+David : 'It killed me inside to see the love of my life die and not be able to do anything about it . it ate me inside until i just couldn't take it .I attempted to make my wife's favorite pie . it
+was a homemade cherry crumb pie .And although i tried countless times I never seemed to get it right , I had gotten used to her making corrections on the way i bake it, and i just couldn't make it
+with out her correcting me. Until my life just reached it's ending. But it was my life's dream to make that pie one last time for my wife's sake , And i think that is why i am stuck here in this
+life instead of passing on to be by my wife's side . and ever since i died i have been trying to recreate it here in this bakery that i spent my youth in.'
+
+Zoe : 'I'm so sorry to hear that Mr. David' Zoe says to the ghost then she shifts her look to you 
+Zoe : 'wouldn't it be nice to be able to do something to help Mr. David?' 
+
+David : 'Oh , You sweet soul . You don't have to help me , i already tried everything .' , David says but then he remembers something .
+David : 'Except ... that book that my wife used to get her notes from . that must be how she would correct me all the time .'"
+sleep 6
+echo "
+
+Zoe : 'That's great ! , Then all you have to do is to get that book , there is a nearby library that you can go to' Zoe says in excitement .
+David : 'But Unfortunately i can't leave this bakery . I have been reincarnated just to haunt this bakery to make the pie .'
+Zoe : 'Well , maybe You can't Mr.David , But me and $name here can go do it for you ,Can't we , $name? '
+Zoe looks at you for confirmation , and waits for your answer .
+What is it that you want to do? 
+a- 'Of course we can help Mr.David !'
+b- 'Uhm , i think that's a funny story to tell idiots who believe anything'
+c- 'This seems too dangerous . i want to go home now.'
+d- Save and exit"
+read r
+echo "$r" >> $name
+#choices=$r
+if [ $r == 'd' ]
+then
+echo "We have your progress saved , Come back soon !" 
+exit 0;
+elif [ $r == 'a' ]
+then 
+echo "David's expression changes into relief .
+
+David : 'Oh My God , Thank you so much you two . it really makes my old soul As happy As ever'
+Zoe : 'I knew you had it in you , $name '  
+David : 'OK , so this book she had had a white cover with the author's picture on it .'
+Zoe : ' So not worry your mind Mr. David , We will make sure you get reunited with your wife as soon as possible ! '
+
+
+You both leave the bakery and start your way to the library"
+sleep 6
+clear 
+echo "                                                                                        |Helping out A GHOST|
+                                                                                        
+You both go on a walk for 30 minutes to the nearest library in town , on your way there Zoe told you all about how she feels happy to help out a 'friend' . You only wondered in your mind how can
+someone be so friendly with another person just by meeting them once .
+NOT EVEN A REAL PERSON . he is a ghost .
+But needless to say the thought of abandoning this situation crossed your mind multiple times , you thought about all the ways that you can escape this or at least try to .
+You thought about telling her you had a stomach ache and you weren't feeling really well , Or maybe you could just run away , since she doesn't even know your name , Or maybe you can get to the
+library and then make your way home when you split up looking for the book .
+But something inside you refused to do all of these things , maybe it was that you were scared of David , or scared of Zoe , Or BOTH ! 
+
+Before you can realize you both are standing in front of the library and Zoe is calling to you .
+Zoe : 'FROM EARTH TO $name ! . We finally made it to the library , i think we should split up to make our search faster and easier.' Zoe says and you nod your head agreeing with her statement "
+sleep 6
+
+echo "
+
+Zoe : 'let's just remind each other of how he described that book he needs , it had a white cover with the author's picture on it.'
+You both nod your head in agreement and you split up to find the book . As soon as you walk in the cooking section in the library you are overwhelmed but how many books there are , it's like the 
+entirety of oceans can't keep these all .
+after what felt like eternity of looking you hear a loud voice coming towards you , you realize it's Zoe's voice .
+Zoe :'FRIENDDD !!!! , I HAVE FOUND IT , I HAVE FOUND THE BOOK '
+she finally finds you and shows you the book she found and you make sure that it is the right book , she has the most excited expression on her face . You ask her why she is as happy as she is ,
+since she isn't really doing something for herself . it's for a ghost 
+Zoe : 'well when you do something for a friend , it's like you do it to yourself. the latter makes me as happy as the first'
+Finally you both head back to the bakery and it's another 30 mind walk there , But this time it was easier for you to tolerate "
+sleep 6
+echo "
+
+Once you get back at the bakery , You see David waiting by the door very worried .
+Zoe : 'Hello , Mr.David . I think i have the thing that will make you happy again .' says Zoe holding up the cooking book in question 
+David : 'OH! , You actually found it , oh this brings back so many memories ' says the ghost while looking at the book with tears in his eyes 
+David : 'But there is another thing that i thought about when you two were out getting the book .. '
+Zoe : 'Oh , what is it ? and is it the reason you look so worried ? '
+David : 'well yes , You see i can't really 'hold'anything because , well because i am a ghost ' he says trying to demonstrate by holding the book while it falls right through his hand
+Zoe : 'Oh , no that means you can't hold the book nor can you make the pie .. that's such a bummer '
+David : 'I was thinking maybe you two can stay around for a little more to help me with the recipe , if that is not much to ask ' he asks politely , it's like he is a completely different ghost
+Zoe : 'On my side , Count ME IN , i love baking , but a small problem is that i suck at it so another hand maybe of use ' Zoe retorts while looking at you 
+And as always she is waiting for your answer 
+a- 'I actually love cooking and i would be happy to help'
+b- 'Listen old ghost , we got you the book now leave us alone and stop haunting us'
+c- Save and exit 
+"
+read e
+echo "$e" >> $name
+#choices=$e
+if [ $e == 'c' ]
+then
+echo "We have your progress saved , come back soon ! "
+exit 0; 
+elif [ $e == 'a' ]
+then
+clear
+echo "                                                                                        |The End|
+
+The three of You end up making that pie that this man's wife was very fond of . You have never seen a man so happy to be looking over and correcting two teens while they bake a pie .
+At the end , You pull out the pie from the oven , And David starts bawling his eyes out , he is in tears over this little pie that u made with little to no effort , this man really loved his wife 
+he tries to reach for the pie to hold it and taste it , and then he is reminded by the fact that he is a ghost , but something looks a little different about him .
+You look at him and you know what is happening , David is vanishing from this world since the objective to make the pie was finally fulfilled . 
+Zoe : 'It was very nice to meet such a great husband and baker like you Mr. David '
+David : 'it was very nice to be reminded that some humans still have hearts inside them and are still willing to help a soul cross over the bridge '
+he then reaches over to hug you both in his arms , and you can swore you felt his hands on your back pulling you in.
+he then vanishes from our world , and you are both left in tears with a pie in your hands.
+Zoe: 'He was such a kind man , i hope he is united with his wife again , you know? they say if you make a memoir for a dead person it helps them go over the bridge easily '
+a- 'i think he can cross over no problem'
+b- 'let's make a memoir for Mr.David'
+c- Save and exit
+"
+read t
+echo "$t" >> $name
+#choices=$t
+if [ $t == 'c' ]
+then
+echo "We have your progress saved , Come back soon ! "
+exit 0; 
+elif [ $t == 'a' ]
+then
+echo "You were so close to finishing this level "
+sleep 2
+echo "
+Try again"
+bakery
+elif [ $t == 'b' ] 
+then
+echo "YOU PASSED THE GHOST STORY GOOD JOB!"
+sleep 2
+echo "
+                                                                                     Congratulations ! 
+                                                                                     
+                                                                                     
+                                                                               "
+fi 
+elif [ $e == 'b' ]
+then
+echo "The two of them look at you with sorrow and sadness , You may have gotten this man his book , and brought back his memories of his wife , but only to bring his dreams of making that pie
+fall down and shatter at yout refusal "
+sleep 2
+echo "
+You lost !"
+fi  
+
+elif [ $r == 'b' ]
+then
+echo "David : 'Are You saying that you don't believe my story ?'
+David's expression turned into frustration and he goes through your body and suddenly u can't move at will "
+
+sleep 1
+echo "
+You have been haunted by David's soul and you can't escape him.
+"
+sleep 1
+echo "now it's time to start over "
+bakery
+
+elif [ $r == 'c' ]
+then
+echo "Once you finish your reply David's expression turns back to anger and the whole bakery rattles . You have made him angry 
+David : 'IS THIS PUNY HUMAN DISRESPECTING ME AFTER I SHARED THIS VALUABLE INFORMATION ?! ' he says before continuing 'You will be cursed forever HUMAN'"
+sleep 1
+echo "
+
+You feel a rush of adrenaline in your body and then you lose consciousness . When you wake up you are not feeling the same as always ."
+sleep 1
+echo"
+
+You died ! "
+bakery
+fi 
+elif [ $f == 'a' ] 
+then
+echo "The man's spirit goes through your body , causing your soul to leave your body . "
+sleep 1
+echo "
+Your body is now haunted and you can't reclaim it ."
+sleep 1
+echo "
+Now you need to start over ."
+bakery
+elif [ $f == 'c' ] 
+then
+echo "Your progress have been saved , Come back soon ! "
+exit 0;
+fi
+}
+
+pleaseplay (){
+#declare -a choices
+read x
+case $x in
+'a'|'A')
+echo "Zoe : 'YAAAY!! i knew you and I would be great friends.'"
+echo "Zoe : 'Oh ! by the way what is your name , i can't just keep calling you freind , right ?'
+"
+read name 
+touch $name
+echo "a" >> $name
+cat $name
+general;;
+'b'|'B')
+echo "Zoe : 'Awww Come on , friend . Don't be a fun killer' 
+a- 'ugh Fine . This better be good'
+b- 'OK'"
+read y
+echo "Zoe : 'YAAAY!! i knew you had some fun in you.'"
+echo "Zoe : 'Oh ! by the way what is your name , i can't just keep calling you freind , right ?'
+"
+read name 
+touch $name
+$echo "a" >> $name
+general;;
+*)
+echo "please enter correct input (either a or b)"
+pleaseplay;;
+esac
+}
+first (){
+echo "Hello, Welcome to SPIRITS  a game where you can experience supernatural events , but still have fun !  
+
+play(p)
+continue(c)
+exit(e)"
+read o
+case $o in
+"p")
+game;;
+"c")
+continu;;
+"e")
+exit 0;;
+esac
+}
+function game(){
+echo "                                                                                           |START| 
+"
+echo "You're sitting at a cafe , reading your book like you always did , you've always been such a sophistecated person , always reading and so quiet about everything , you never go out to party ,
+not that you get invited to any . you are always that one person who doesn;t like group activities or 'fun' , you wonder sometimes what goes through people's heads when they do these so called fun
+stuff , you ponder an answer as you take a sip of ur cup of coffee , and that makes you remember , you don't have any coffe at home . that's why you had to get out of your comfort zone and go to a 
+cafe , you finish up your book and your coffee , and you go ask the bartender if they sell coffee here . you are met with a negative answer , but he describes to you a near store that sells
+coffe , you thank him and you go on your way to get your coffee "
+sleep 5 
+
+echo "you go in the store and before you could talk the lady there welcomes you .
+
+Store lady : Hi!  
+I am Zoe , and i am new at this store . I have been working here for about 2 weeks , everyone told me this place is fullof ghosts . but up til this moment as we speak nothing spooky happened . to
+be fair i am disapointed , mainly because i am a curious cat by nature and i just can't help but wonder 'what if' ! , anyways how can i help you today? 
+
+before you can speak again something happens ..."
+sleep 3
+echo "                                              You both hear screeching and crying nnoises "
+sleep 1
+echo "
+Zoe : 'Oh don't be afraid, this noise just happens , it is just the air howling outside the supermarket ,nothing to be worried about'"
+
+sleep 1
+echo "                                              the screeching noise is repeated and both doors of the shops next to the supermarket open letting out a stream of air and cries"
+sleep 1
+echo " 
+Zoe : 'OK , maybe THAT doesn't happen very often , these shops are so old no one has been here in YEARS .'
+Zoe : 'Oh , i have an idea . we should both team up and figure this out ! '
+Do you want to go check the shops out with me ?'
+a- 'Absolutely ,Zoe . let's go on an adventure'
+b- 'Uhm , I think i will pass on this one'"
+pleaseplay
+}
+first
